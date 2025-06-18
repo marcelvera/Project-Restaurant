@@ -1,0 +1,39 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso | Los Pollos Hermanos</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body class="bg-blue-50 font-sans">
+
+  <div class="flex justify-center items-center h-screen">
+    <div class="bg-white shadow-lg rounded-2xl p-10 w-96 text-center animate__animated animate__fadeIn">
+
+      <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Los_Pollos_Hermanos_logo.png" alt="logo" class="w-28 h-20 mx-auto mb-4"></a>
+
+      <h2 id="form-title" class="text-2xl font-bold text-red-600 mb-4">Iniciar Sesión</h2>
+
+      <form id="form-login" class="space-y-4">
+        <input id="emailUser" type="email" placeholder="Correo electrónico" class="w-full border border-red-400 rounded px-3 py-2 focus:outline-none" required />
+        <input id="passwordUser" type="password" placeholder="Contraseña" class="w-full border border-red-400 rounded px-3 py-2 focus:outline-none" required />
+        <button id="buttonAcceso" type="button" class="w-full bg-yellow-400 text-red-600 font-bold py-2 rounded hover:bg-yellow-500 border-r-4 border-red-600">Entrar</button>
+      </form>
+
+      <form id="form-register" class="space-y-4 hidden">
+        <input id="nombUserNew" type="text" placeholder="Nombre completo" class="w-full border border-red-400 rounded px-3 py-2 focus:outline-none" required />
+        <input id="emailUserNew" type="email" placeholder="Correo electrónico" class="w-full border border-red-400 rounded px-3 py-2 focus:outline-none" required />
+        <input id="passwordUserNew" type="password" placeholder="Contraseña" class="w-full border border-red-400 rounded px-3 py-2 focus:outline-none" required />
+        <button id="buttonReg" type="button" class="w-full bg-yellow-400 text-red-600 font-bold py-2 rounded hover:bg-yellow-500 border-r-4 border-red-600">Registrarse</button>
+      </form>
+
+      <p class="mt-4 text-sm text-blue-600 cursor-pointer hover:text-red-600" id="toggle-form">¿No tienes cuenta? Regístrate aquí</p>
+    </div>
+  </div>
+
+  <script src="acceso.js"></script>
+    
+</body>
+</html>
